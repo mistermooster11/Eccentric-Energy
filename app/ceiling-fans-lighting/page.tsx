@@ -28,7 +28,7 @@ export default function CeilingFansLightingPage() {
       />
       <ServiceDetailSection
         activeService="Ceiling Fans & Lighting"
-        sidebarImage="/images/service-1.png"
+        sidebarImage="/images/service-ceiling-fans.jpg"
         sidebarImageWidth={535}
         sidebarImageHeight={643}
         heading="Ceiling Fan & Lighting Installation"
