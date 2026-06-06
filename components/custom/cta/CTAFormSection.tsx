@@ -1,7 +1,6 @@
 "use client";
 
-import Image from "next/image";
-import { useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 
 export default function CTAFormSection() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -31,6 +30,20 @@ export default function CTAFormSection() {
     };
   }, []);
 
+  const [form, setForm] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    city: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+  };
+
   const WHY_LEFT = [
     "24/7 emergency service",
     "Licensed & insured — EC-13012375",
@@ -47,15 +60,80 @@ export default function CTAFormSection() {
   return (
     <section className="cta-form" ref={sectionRef}>
       <div className="cta-form__container">
-        {/* Left: image panel */}
-        <div className="cta-form__left cta-form__left--image">
-          <Image
-            src="/images/eccentric-before-after.webp"
-            alt="Eccentric Energy electrical work"
-            fill
-            style={{ objectFit: "cover", objectPosition: "center" }}
-            sizes="(max-width: 768px) 100vw, 45vw"
-          />
+        {/* Left: orange bg + form */}
+        <div className="cta-form__left p-10!">
+          <div className="cta-form__eyebrow hidden md:block">Always on call for you</div>
+          <h2 className="cta-form__heading hidden md:block">
+            We are always ready <br />to help you and answer your questions
+          </h2>
+          <h2 className="cta-form__heading block md:hidden">
+            Get in touch
+          </h2>
+          <p className="cta-form__subtext hidden md:block">
+            24/7 emergency service — Licensed electricians across
+            <br />Palm Beach County — Free estimates available
+          </p>
+          <form className="cta-form__form" onSubmit={handleSubmit}>
+            <div className="cta-form__row">
+              <input
+                type="text"
+                placeholder="First Name"
+                className="cta-form__input"
+                value={form.firstName}
+                onChange={(e) => setForm({ ...form, firstName: e.target.value })}
+              />
+              <input
+                type="text"
+                placeholder="Last Name"
+                className="cta-form__input"
+                value={form.lastName}
+                onChange={(e) => setForm({ ...form, lastName: e.target.value })}
+              />
+            </div>
+            <div className="cta-form__row">
+              <input
+                type="email"
+                placeholder="Email"
+                required
+                className="cta-form__input"
+                value={form.email}
+                onChange={(e) => setForm({ ...form, email: e.target.value })}
+              />
+              <input
+                type="tel"
+                placeholder="Phone"
+                className="cta-form__input"
+                value={form.phone}
+                onChange={(e) => setForm({ ...form, phone: e.target.value })}
+              />
+            </div>
+            <div className="cta-form__row">
+              <input
+                type="text"
+                placeholder="City"
+                className="cta-form__input"
+                value={form.city}
+                onChange={(e) => setForm({ ...form, city: e.target.value })}
+              />
+              <input
+                type="text"
+                placeholder="Subject"
+                className="cta-form__input"
+                value={form.subject}
+                onChange={(e) => setForm({ ...form, subject: e.target.value })}
+              />
+            </div>
+            <textarea
+              placeholder="Your Message"
+              rows={4}
+              className="cta-form__textarea"
+              value={form.message}
+              onChange={(e) => setForm({ ...form, message: e.target.value })}
+            />
+            <button type="submit" className="cta-form__submit">
+              Get a Quote
+            </button>
+          </form>
         </div>
 
         {/* Right: dark transparent bg, info */}
