@@ -18,6 +18,7 @@ export default function DockMarinaElectricalPage() {
   return (
     <>
       <PageHeroSection
+        bgImage="/images/electrical-panel-utility-box-exterior.jpg"
         title="Dock & Marina Electrical"
         subtitle="Installing, maintaining, and repairing shore power for docks and marinas throughout Palm Beach County. Eccentric Energy are the local marina electrical experts."
         breadcrumbs={[

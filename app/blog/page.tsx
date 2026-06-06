@@ -15,6 +15,7 @@ export default function BlogPage() {
   return (
     <>
       <PageHeroSection
+        bgImage="/images/electrician-testing-electrical-panel-multimeter.jpg"
         title="Blog"
         subtitle="Expert tips, industry insights, and electrical guides from the Eccentric Energy team."
         breadcrumbs={[

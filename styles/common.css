@@ -349,12 +349,12 @@
   overflow: hidden;
 }
 
-/* Background image */
+/* Background image — per-page override via --page-hero-bg CSS var */
 .page-hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("/wp-assets/Title-Background-Image-scaled.webp");
+  background-image: var(--page-hero-bg, url("/images/electrician-with-tools-residential-site.jpg"));
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;

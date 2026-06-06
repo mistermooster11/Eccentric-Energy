@@ -770,11 +770,22 @@
   align-items: stretch;
 }
 
-/* ── Left col: orange bg, form ── */
+/* ── Left col: image panel ── */
 .cta-form__left {
   background-color: var(--color-accent);
   padding: 50px;
   position: relative;
+}
+
+.cta-form__left--image {
+  padding: 0;
+  background-color: transparent;
+  overflow: hidden;
+  min-height: 420px;
+}
+
+.cta-form__left--image::after {
+  display: none;
 }
 
 /* Inset zigzag border frame, 4px from edge */

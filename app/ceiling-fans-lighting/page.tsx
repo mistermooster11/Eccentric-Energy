@@ -18,6 +18,7 @@ export default function CeilingFansLightingPage() {
   return (
     <>
       <PageHeroSection
+        bgImage="/images/eccentric-fan.webp"
         title="Ceiling Fans & Lighting"
         subtitle="New or replacement ceiling fans and lighting installations — including tall or sloped ceilings and tight attic access. Serving Palm Beach County."
         breadcrumbs={[

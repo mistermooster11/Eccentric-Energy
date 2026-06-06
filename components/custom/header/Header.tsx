@@ -66,7 +66,7 @@ export default function Header() {
         <div className="header__logo">
           <Link href="/">
             <Image
-              src="/logo.png"
+              src="/eccentric-logo-lightBG.png"
               alt="Eccentric Energy"
               width={200}
               height={44}

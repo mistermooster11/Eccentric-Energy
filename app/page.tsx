@@ -25,7 +25,7 @@ export default function Home() {
       <TestimonialsSection />
       <NeedServicesSection />
       <FAQSection />
-      <BlogSection />
+      <BlogSection limit={2} />
     </>
   );
 }

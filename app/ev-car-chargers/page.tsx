@@ -18,6 +18,7 @@ export default function EvCarChargersPage() {
   return (
     <>
       <PageHeroSection
+        bgImage="/images/electric-vehicle-charging-home-driveway.jpg"
         title="EV Car Charger Installation"
         subtitle="Installing and maintaining EV car chargers of all types throughout Palm Beach County. We ensure your panel has the capacity and your charger is installed correctly."
         breadcrumbs={[

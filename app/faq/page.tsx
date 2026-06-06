@@ -16,6 +16,7 @@ export default function FAQPage() {
   return (
     <>
       <PageHeroSection
+        bgImage="/images/electrician-inspecting-circuit-breaker-panel.jpg"
         title="Frequently Asked Questions"
         subtitle="Everything you need to know about our services, pricing, and process."
         breadcrumbs={[

@@ -18,6 +18,7 @@ export default function BathroomElectricalUpgradesPage() {
   return (
     <>
       <PageHeroSection
+        bgImage="/images/eccentric-led-mirror.webp"
         title="Bathroom Electrical Upgrades"
         subtitle="Reinvigorating bathrooms with new vent fans, heated bidets, heated towel racks, and modern electrical throughout Palm Beach County."
         breadcrumbs={[

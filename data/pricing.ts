@@ -49,4 +49,18 @@ export const pricingCards: PricingCard[] = [
     description:
       "From minor repairs to full rewires and specialty installs, we handle every scope with licensed, code-compliant craftsmanship.",
   },
+  {
+    price: 0,
+    note: "Serving all of Palm Beach County",
+    title: "Specialty & Marine",
+    features: [
+      "Dock & marina shore power",
+      "FPL service undergrounding",
+      "Historic knob-and-tube rewires",
+      "Bathroom electrical upgrades",
+      "Ceiling fans & lighting",
+    ],
+    description:
+      "We take the jobs others won't — marina installations, FPL coordination, and historic rewires done with minimal wall damage.",
+  },
 ];

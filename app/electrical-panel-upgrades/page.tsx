@@ -18,6 +18,7 @@ export default function ElectricalPanelUpgradesPage() {
   return (
     <>
       <PageHeroSection
+        bgImage="/images/eccentric-panel.webp"
         title="Electrical Panel Upgrades"
         subtitle="Changing or adding panels, electric meters, and installing circuits throughout Palm Beach County. Licensed, insured, and code-compliant."
         breadcrumbs={[

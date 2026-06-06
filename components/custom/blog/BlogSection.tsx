@@ -5,7 +5,8 @@ import Link from "next/link";
 import { useRef, useEffect } from "react";
 import { blogPosts } from "@/data/blog";
 
-export default function BlogSection() {
+export default function BlogSection({ limit }: { limit?: number }) {
+  const posts = limit ? blogPosts.slice(0, limit) : blogPosts;
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -44,7 +45,7 @@ export default function BlogSection() {
       </div>
 
       <div className="blog__grid">
-        {blogPosts.map((post, i) => (
+        {posts.map((post, i) => (
           <article key={i} className="blog-card">
             <div className="blog-card__media">
               <Link href={post.slug}>

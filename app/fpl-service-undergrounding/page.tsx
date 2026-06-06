@@ -18,6 +18,7 @@ export default function FplServiceUndergroundingPage() {
   return (
     <>
       <PageHeroSection
+        bgImage="/images/eccentric-service.webp"
         title="FPL Service Undergrounding"
         subtitle="Moving overhead power, phone, and cable wires underground — removing unsightly utility poles and improving storm resilience. Serving Palm Beach County."
         breadcrumbs={[

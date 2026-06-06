@@ -16,6 +16,7 @@ export default function ServicesPage() {
   return (
     <>
       <PageHeroSection
+        bgImage="/images/electrician-installing-circuit-breaker-panel.jpg"
         title="Our Services"
         subtitle="Licensed electrical services for residential and commercial clients throughout West Palm Beach and Palm Beach County."
         breadcrumbs={[

@@ -18,6 +18,7 @@ export default function AboutPage() {
   return (
     <>
       <PageHeroSection
+        bgImage="/images/electrician-inspecting-electrical-panel-installation.jpg"
         title="About Us"
         subtitle="Family owned electrical contractor serving West Palm Beach and Palm Beach County — licensed, insured, and morally aimed."
         breadcrumbs={[

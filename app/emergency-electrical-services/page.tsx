@@ -18,6 +18,7 @@ export default function EmergencyElectricalServicesPage() {
   return (
     <>
       <PageHeroSection
+        bgImage="/images/electrician-examining-circuit-breaker-panel.jpg"
         title="24/7 Emergency Electrical Services"
         subtitle="Always on call for you. Electrical emergencies don't wait — call Eccentric Energy any time for fast response across Palm Beach County."
         breadcrumbs={[

@@ -18,6 +18,7 @@ export default function HistoricRewiresPage() {
   return (
     <>
       <PageHeroSection
+        bgImage="/images/eccentric-outlet.webp"
         title="Historic Rewires"
         subtitle="Updating old knob-and-tube, asbestos, and cloth wiring with modern copper — with minimal damage to walls and ceilings. Serving Palm Beach County."
         breadcrumbs={[
