@@ -3,7 +3,6 @@ import HeroSection from "@/components/custom/hero/HeroSection";
 import MarqueeTicker from "@/components/custom/ticker/MarqueeTicker";
 import TrustedLogos from "@/components/custom/trusted/TrustedLogos";
 import AboutSection from "@/components/custom/about/AboutSection";
-import ServicesSection from "@/components/custom/services/ServicesSection";
 import PricingSection from "@/components/custom/pricing/PricingSection";
 import CTAFormSection from "@/components/custom/cta/CTAFormSection";
 import TestimonialsSection from "@/components/custom/testimonials/TestimonialsSection";

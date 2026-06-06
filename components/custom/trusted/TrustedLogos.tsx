@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useRef, useEffect } from "react";
 
 export default function TrustedLogos() {
@@ -43,40 +42,45 @@ export default function TrustedLogos() {
     <section className="trusted" ref={sectionRef}>
       <div className="trusted__inner">
         <h2 className="trusted__heading">
-          Trusted by Palm Beach County Homeowners &amp; Businesses
+          Florida State Certified &amp; Trusted Across Palm Beach County
         </h2>
         <div className="trusted__logos">
-          <div className="trusted__logo-item">
-            <Image
-              src="/images/logos-restaurante-2.png"
-              alt="Restaurant Logo"
-              width={138}
-              height={80}
-              style={{ height: "60px", width: "auto" }}
-            />
+          <div className="trusted__logo-item trusted__credential">
+            <div className="trusted__credential-icon">🏛️</div>
+            <div className="trusted__credential-text">
+              <strong>State Certified</strong>
+              <span>EC-13012375</span>
+            </div>
           </div>
-          <div className="trusted__logo-item">
-            <Image
-              src="/images/logo-joia-beach.png"
-              alt="Joia Beach Logo"
-              width={265}
-              height={80}
-              style={{ height: "60px", width: "auto" }}
-            />
+          <div className="trusted__logo-item trusted__credential">
+            <div className="trusted__credential-icon">⚡</div>
+            <div className="trusted__credential-text">
+              <strong>IEC Trained</strong>
+              <span>All Technicians</span>
+            </div>
           </div>
-          <div className="trusted__logo-item">
-            <Image
-              src="/images/logos-restaurante-1.png"
-              alt="Restaurant Logo"
-              width={118}
-              height={78}
-              style={{ height: "60px", width: "auto" }}
-            />
+          <div className="trusted__logo-item trusted__credential">
+            <div className="trusted__credential-icon">🛡️</div>
+            <div className="trusted__credential-text">
+              <strong>Licensed &amp; Insured</strong>
+              <span>Florida</span>
+            </div>
+          </div>
+          <div className="trusted__logo-item trusted__credential">
+            <div className="trusted__credential-icon">⏰</div>
+            <div className="trusted__credential-text">
+              <strong>24/7 Emergency</strong>
+              <span>Always On Call</span>
+            </div>
+          </div>
+          <div className="trusted__logo-item trusted__credential">
+            <div className="trusted__credential-icon">🏠</div>
+            <div className="trusted__credential-text">
+              <strong>Family Owned</strong>
+              <span>Since 2023</span>
+            </div>
           </div>
         </div>
-        <p className="trusted__disclaimer text-center text-xs mt-4">
-          Logos are property of their respective owners and used for identification only.
-        </p>
       </div>
     </section>
   );
