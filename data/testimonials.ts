@@ -13,15 +13,33 @@ export const reviews: Review[] = [
     avatar: "/images/avatar-michael.png",
   },
   {
-    name: "Satisfied Customer",
+    name: "David R.",
     rating: 5,
-    text: "Fast, professional, and honest. Eccentric Energy handled our panel upgrade and explained everything clearly before starting. No surprises on the bill.",
+    text: "Needed a full panel upgrade before selling the house. Eccentric Energy was on time, pulled the permit, and passed inspection first try. Exactly what I needed.",
     avatar: "/images/avatar-customer2.png",
   },
   {
-    name: "West Palm Beach Homeowner",
+    name: "Lisa T.",
     rating: 5,
-    text: "Called about a wiring concern and they were out the next morning. Knowledgeable team, fair pricing, and they cleaned up after themselves. Will use again.",
+    text: "Had them install two EV chargers in our garage. Clean install, no mess, and they walked me through everything. Pricing was upfront with no surprises.",
+    avatar: "/images/avatar-customer3.png",
+  },
+  {
+    name: "Mark S.",
+    rating: 5,
+    text: "Called late on a Friday with a tripped breaker that wouldn't reset. They were at my house within two hours. Problem solved, didn't overcharge. That's how it should be done.",
+    avatar: "/images/avatar-michael.png",
+  },
+  {
+    name: "Karen B.",
+    rating: 5,
+    text: "We have an older home with knob and tube wiring and were having trouble getting homeowner's insurance. Eccentric Energy rewired the critical areas with minimal wall damage. Highly recommend.",
+    avatar: "/images/avatar-customer2.png",
+  },
+  {
+    name: "Tom F.",
+    rating: 5,
+    text: "Family owned business and it shows — they actually care. Fixed our dock electrical issues that two other contractors couldn't figure out. Very satisfied.",
     avatar: "/images/avatar-customer3.png",
   },
 ];
